@@ -4,25 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3075a1c-937c-43c4-870c-b479dfa8c20d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/hello-view.fxml" afterDir="false" />
+    <list default="true" id="c3075a1c-937c-43c4-870c-b479dfa8c20d" name="Changes" comment="Initial Commit with Integrity Pledge">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/DBUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/graph-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,7 +36,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/kevin/IdeaProjects/AdvancedJavaAssignment1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,11 +54,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695829099474</updated>
-      <workItem from="1695829100538" duration="318000" />
+      <workItem from="1695829100538" duration="473000" />
+      <workItem from="1696439330673" duration="2046000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit with Integrity Pledge">
+      <option name="closed" value="true" />
+      <created>1695829484176</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695829484176</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit with Integrity Pledge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit with Integrity Pledge" />
   </component>
 </project>
