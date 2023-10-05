@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3075a1c-937c-43c4-870c-b479dfa8c20d" name="Changes" comment="Oct 4 - Data imported to the AWS database, DBUtility class started, basic layout of graph-view done.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/GraphViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/TableViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/table-view.fxml" afterDir="false" />
+    <list default="true" id="c3075a1c-937c-43c4-870c-b479dfa8c20d" name="Changes" comment="Oct 5 - graph-view and table-view done for functionality(styling needed), Controller Class skeletons copied">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Song.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/graph-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/graph-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/HelloController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/kevin/IdeaProjects/Week2Tasks",
+    "last_opened_file_path": "C:/Users/kevin/IdeaProjects/AdvancedJavaAssignment1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,7 +57,8 @@
       <option name="presentableId" value="Default" />
       <updated>1695829099474</updated>
       <workItem from="1695829100538" duration="473000" />
-      <workItem from="1696439330673" duration="4076000" />
+      <workItem from="1696439330673" duration="5003000" />
+      <workItem from="1696530425201" duration="1943000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit with Integrity Pledge">
       <option name="closed" value="true" />
@@ -74,7 +76,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696442186800</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Oct 5 - graph-view and table-view done for functionality(styling needed), Controller Class skeletons copied">
+      <option name="closed" value="true" />
+      <created>1696529498878</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696529498878</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,6 +93,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit with Integrity Pledge" />
     <MESSAGE value="Oct 4 - Data imported to the AWS database, DBUtility class started, basic layout of graph-view done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Oct 4 - Data imported to the AWS database, DBUtility class started, basic layout of graph-view done." />
+    <MESSAGE value="Oct 5 - graph-view and table-view done for functionality(styling needed), Controller Class skeletons copied" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oct 5 - graph-view and table-view done for functionality(styling needed), Controller Class skeletons copied" />
   </component>
 </project>
