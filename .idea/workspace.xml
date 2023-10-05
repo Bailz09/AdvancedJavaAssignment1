@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3075a1c-937c-43c4-870c-b479dfa8c20d" name="Changes" comment="Oct 5 - graph-view and table-view done for functionality(styling needed), Controller Class skeletons copied">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Song.java" afterDir="false" />
+    <list default="true" id="c3075a1c-937c-43c4-870c-b479dfa8c20d" name="Changes" comment="Oct 5 - Song Model Class complete with validations on set methods and toString() method.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/DBUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/DBUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/GraphViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/GraphViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +44,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -58,7 +60,7 @@
       <updated>1695829099474</updated>
       <workItem from="1695829100538" duration="473000" />
       <workItem from="1696439330673" duration="5003000" />
-      <workItem from="1696530425201" duration="1943000" />
+      <workItem from="1696530425201" duration="7911000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit with Integrity Pledge">
       <option name="closed" value="true" />
@@ -84,7 +86,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696529498878</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Oct 5 - Song Model Class complete with validations on set methods and toString() method.">
+      <option name="closed" value="true" />
+      <created>1696532430696</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696532430696</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +104,7 @@
     <MESSAGE value="Initial Commit with Integrity Pledge" />
     <MESSAGE value="Oct 4 - Data imported to the AWS database, DBUtility class started, basic layout of graph-view done." />
     <MESSAGE value="Oct 5 - graph-view and table-view done for functionality(styling needed), Controller Class skeletons copied" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oct 5 - graph-view and table-view done for functionality(styling needed), Controller Class skeletons copied" />
+    <MESSAGE value="Oct 5 - Song Model Class complete with validations on set methods and toString() method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Oct 5 - Song Model Class complete with validations on set methods and toString() method." />
   </component>
 </project>

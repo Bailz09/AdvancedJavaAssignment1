@@ -1,5 +1,8 @@
 package com.example.advancedjavaassignment1;
 
+import java.sql.*;
+import java.util.ArrayList;
+
 public class DBUtility {
 
     private static String dbUser = "Kevin200544764";
@@ -12,4 +15,39 @@ public class DBUtility {
      * COMP1011Friday -> name of the database
      */
     private static String connectURL = "jdbc:mysql://172.31.22.43:3306/Kevin200544764";
+
+    /**
+     * Get the songs from the database
+     * @return An array list of songs
+     */
+    public static ArrayList<Song> getSongsFromDB(){
+        ArrayList<Song> songs = new ArrayList<>();
+
+        //connect to the DB
+        String sql = "SELECT track_name, `artist(s)_name`, released_year, streams FROM `spotify-2023`";
+
+        //we use a try ...with resources block to ensure the connection, statement and resultSet are automatically closed
+        try
+                (
+                Connection conn = DriverManager.getConnection(connectURL, dbUser, password);
+                Statement statement = conn.createStatement();
+                ResultSet resultset = statement.executeQuery(sql)
+                )
+        {
+            while (resultset.next())
+            {
+                String trackName = resultset.getString("track_name");
+                String trackArtist = resultset.getString("artist(s)_name");
+                int releasedYear = resultset.getInt("released_year");
+                int numberOfStreams = resultset.getInt("streams");
+
+                songs.add(new Song(trackName, trackArtist, releasedYear, numberOfStreams));
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        return songs;
+    }
 }
