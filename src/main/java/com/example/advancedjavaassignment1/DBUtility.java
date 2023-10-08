@@ -20,11 +20,17 @@ public class DBUtility {
      * Get the songs from the database
      * @return An array list of songs
      */
-    public static ArrayList<Song> getSongsFromDB(){
+    public static ArrayList<Song> getSongsFromDB(String sortOrder){
         ArrayList<Song> songs = new ArrayList<>();
 
         //connect to the DB
-        String sql = "SELECT track_name, `artist(s)_name`, released_year, streams FROM `spotify-2023`";
+        //Decided to try and add in a radio button for most and least streamed songs, wish me luck
+        String sql = String.format("SELECT track_name, `artist(s)_name`, released_year, streams " +
+                "FROM `spotify-2023` " +
+                "ORDER BY streams %s " +
+                "LIMIT 50", sortOrder);
+
+
 
         //we use a try ...with resources block to ensure the connection, statement and resultSet are automatically closed
         try
@@ -35,6 +41,7 @@ public class DBUtility {
                 )
         {
             while (resultset.next())
+
             {
                 String trackName = resultset.getString("track_name");
                 String trackArtist = resultset.getString("artist(s)_name");

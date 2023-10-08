@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3075a1c-937c-43c4-870c-b479dfa8c20d" name="Changes" comment="Oct 5 - DBUtility and GraphViewController displaying data, need to restrict results to Top 15 songs or similar still, plus need to complete TableViewController still">
+    <list default="true" id="c3075a1c-937c-43c4-870c-b479dfa8c20d" name="Changes" comment="Oct 08 - test to commit the icon image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/DBUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/DBUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/GraphViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/GraphViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/graph-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/graph-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +63,8 @@
       <workItem from="1696530425201" duration="8094000" />
       <workItem from="1696606825490" duration="1483000" />
       <workItem from="1696612418849" duration="681000" />
-      <workItem from="1696792956445" duration="321000" />
+      <workItem from="1696792956445" duration="3632000" />
+      <workItem from="1696796817062" duration="5958000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit with Integrity Pledge">
       <option name="closed" value="true" />
@@ -102,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696539241409</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Oct 08 - test to commit the icon image">
+      <option name="closed" value="true" />
+      <created>1696793328914</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696793328914</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +126,7 @@
     <MESSAGE value="Oct 5 - graph-view and table-view done for functionality(styling needed), Controller Class skeletons copied" />
     <MESSAGE value="Oct 5 - Song Model Class complete with validations on set methods and toString() method." />
     <MESSAGE value="Oct 5 - DBUtility and GraphViewController displaying data, need to restrict results to Top 15 songs or similar still, plus need to complete TableViewController still" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oct 5 - DBUtility and GraphViewController displaying data, need to restrict results to Top 15 songs or similar still, plus need to complete TableViewController still" />
+    <MESSAGE value="Oct 08 - test to commit the icon image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oct 08 - test to commit the icon image" />
   </component>
 </project>

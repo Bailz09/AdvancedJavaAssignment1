@@ -20,13 +20,13 @@ public class Song {
     }
 
     public void setSongName(String songName) {
-        if(validString(songName, 50))
+        if(validString(songName, 250))
         {
             this.songName = songName;
         }
         else
         {
-            throw new IllegalArgumentException("Track Name must be between 1 and 50 characters in length");
+            throw new IllegalArgumentException("Track Name must be between 1 and 250 characters in length");
         }
     }
 
@@ -35,13 +35,13 @@ public class Song {
     }
 
     public void setSongArtist(String songArtist) {
-        if(validString(songArtist, 30))
+        if(validString(songArtist, 250))
         {
             this.songArtist = songArtist;
         }
         else
         {
-            throw new IllegalArgumentException("Track Name must be between 1 and 30 characters in length");
+            throw new IllegalArgumentException("Artist Name must be between 1 and 250 characters in length");
         }
     }
 
