@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3075a1c-937c-43c4-870c-b479dfa8c20d" name="Changes" comment="Oct 5 - Song Model Class complete with validations on set methods and toString() method.">
+    <list default="true" id="c3075a1c-937c-43c4-870c-b479dfa8c20d" name="Changes" comment="Oct 5 - DBUtility and GraphViewController displaying data, need to restrict results to Top 15 songs or similar still, plus need to complete TableViewController still">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/DBUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/DBUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/GraphViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/GraphViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,23 +30,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/kevin/IdeaProjects/AdvancedJavaAssignment1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kevin/IdeaProjects/AdvancedJavaAssignment1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,7 +57,10 @@
       <updated>1695829099474</updated>
       <workItem from="1695829100538" duration="473000" />
       <workItem from="1696439330673" duration="5003000" />
-      <workItem from="1696530425201" duration="7911000" />
+      <workItem from="1696530425201" duration="8094000" />
+      <workItem from="1696606825490" duration="1483000" />
+      <workItem from="1696612418849" duration="681000" />
+      <workItem from="1696792956445" duration="321000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit with Integrity Pledge">
       <option name="closed" value="true" />
@@ -94,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696532430696</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Oct 5 - DBUtility and GraphViewController displaying data, need to restrict results to Top 15 songs or similar still, plus need to complete TableViewController still">
+      <option name="closed" value="true" />
+      <created>1696539241409</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696539241409</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +113,7 @@
     <MESSAGE value="Oct 4 - Data imported to the AWS database, DBUtility class started, basic layout of graph-view done." />
     <MESSAGE value="Oct 5 - graph-view and table-view done for functionality(styling needed), Controller Class skeletons copied" />
     <MESSAGE value="Oct 5 - Song Model Class complete with validations on set methods and toString() method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Oct 5 - Song Model Class complete with validations on set methods and toString() method." />
+    <MESSAGE value="Oct 5 - DBUtility and GraphViewController displaying data, need to restrict results to Top 15 songs or similar still, plus need to complete TableViewController still" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oct 5 - DBUtility and GraphViewController displaying data, need to restrict results to Top 15 songs or similar still, plus need to complete TableViewController still" />
   </component>
 </project>
