@@ -37,6 +37,9 @@
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
+               <padding>
+                  <Insets top="40.0" />
+               </padding>
             </RadioButton>
             <RadioButton fx:id="leastStreamedButton" mnemonicParsing="false" onAction="#toggle" text="Least Streamed" textFill="WHITE" />
             <Button id="viewTableButton" fx:id="viewTableButton" mnemonicParsing="false" onAction="#viewTable" text="View Table" textFill="WHITE">
