@@ -12,7 +12,7 @@
    <children>
       <VBox alignment="TOP_CENTER" layoutX="427.0" layoutY="116.0" prefHeight="800.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label text="Most Streamed Songs on Spotify 2023" />
+            <Label id="tableLabel" text="Most Streamed Songs on Spotify 2023" textFill="WHITE" />
             <TableView fx:id="tableView" maxWidth="-Infinity" prefHeight="469.0" prefWidth="962.0">
               <columns>
                 <TableColumn fx:id="trackNameColumn" prefWidth="309.0" text="Track Name" />
@@ -24,7 +24,7 @@
                   <Insets bottom="20.0" top="50.0" />
                </VBox.margin>
             </TableView>
-            <Button fx:id="graphButton" mnemonicParsing="false" onAction="#viewGraph" text="View Graph" />
+            <Button id="viewGraphButton" fx:id="graphButton" mnemonicParsing="false" onAction="#viewGraph" text="View Graph" textFill="WHITE" />
          </children>
       </VBox>
    </children>

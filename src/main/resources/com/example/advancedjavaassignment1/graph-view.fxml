@@ -9,6 +9,7 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="800.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.advancedjavaassignment1.GraphViewController">
    <children>
@@ -17,10 +18,16 @@
             <Label alignment="TOP_LEFT" text="Most Streamed Songs on Spotify 2023" textFill="WHITE" />
             <BarChart fx:id="barChart" alternativeRowFillVisible="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" maxWidth="-Infinity" prefHeight="460.0" prefWidth="915.0" title="Most Streamed Songs on Spotify 2023" verticalGridLinesVisible="false" verticalZeroLineVisible="false">
               <xAxis>
-                <CategoryAxis prefHeight="111.0" prefWidth="836.0" side="BOTTOM" tickLabelFill="WHITE" tickLabelRotation="90.0" />
+                <CategoryAxis prefHeight="111.0" prefWidth="836.0" side="BOTTOM" tickLabelFill="WHITE" tickLabelRotation="90.0">
+                     <tickLabelFont>
+                        <Font size="18.0" />
+                     </tickLabelFont></CategoryAxis>
               </xAxis>
               <yAxis>
-                <NumberAxis minorTickVisible="false" prefHeight="278.0" prefWidth="91.0" side="LEFT" tickLabelFill="WHITE" />
+                <NumberAxis minorTickVisible="false" prefHeight="278.0" prefWidth="91.0" side="LEFT" tickLabelFill="WHITE">
+                     <tickLabelFont>
+                        <Font size="18.0" />
+                     </tickLabelFont></NumberAxis>
               </yAxis>
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="50.0" />
@@ -32,7 +39,7 @@
                </VBox.margin>
             </RadioButton>
             <RadioButton fx:id="leastStreamedButton" mnemonicParsing="false" onAction="#toggle" text="Least Streamed" textFill="WHITE" />
-            <Button fx:id="viewTableButton" mnemonicParsing="false" onAction="#viewTable" text="View Table">
+            <Button id="viewTableButton" fx:id="viewTableButton" mnemonicParsing="false" onAction="#viewTable" text="View Table" textFill="WHITE">
                <VBox.margin>
                   <Insets top="70.0" />
                </VBox.margin></Button>

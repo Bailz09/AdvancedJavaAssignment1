@@ -3,7 +3,6 @@
     -fx-background-image: url("images/Background.png");
     -fx-background-size: cover;
     -fx-font-size: 1.4em;
-
 }
 
 .bar-chart .chart-title {
@@ -13,10 +12,27 @@
 
 .bar-chart .axis-label {
     -fx-font-size: 1.4em;
-    -fx-text-fill: white;
 }
 
 .chart-plot-background {
     -fx-background-color: gray;
 }
 
+#tableLabel {
+    -fx-font-family: "Roboto Light";
+    -fx-font-size: 1.6em;
+}
+
+#viewTableButton {
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: black;
+    -fx-border-color: white;
+}
+
+#viewGraphButton {
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: black;
+    -fx-border-color: white;
+}
