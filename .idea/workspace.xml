@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3075a1c-937c-43c4-870c-b479dfa8c20d" name="Changes" comment="Oct 09 - trying to add background image">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/SceneChanger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/images/Background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/DBUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/DBUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/GraphViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/GraphViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/Song.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/TableViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/TableViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/graph-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/graph-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/images/Background.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/table-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/advancedjavaassignment1/table-view.fxml" afterDir="false" />
+    <list default="true" id="c3075a1c-937c-43c4-870c-b479dfa8c20d" name="Changes" comment="Oct 09 - Fully Commented and Java Documented, may still add a few tests if time allows">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/SceneChanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/advancedjavaassignment1/SceneChanger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +66,7 @@
       <workItem from="1696612418849" duration="681000" />
       <workItem from="1696792956445" duration="3632000" />
       <workItem from="1696796817062" duration="6369000" />
-      <workItem from="1696871713585" duration="12400000" />
+      <workItem from="1696871713585" duration="12551000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit with Integrity Pledge">
       <option name="closed" value="true" />
@@ -152,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696874244091</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Oct 09 - Fully Commented and Java Documented, may still add a few tests if time allows">
+      <option name="closed" value="true" />
+      <created>1696885622782</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1696885622782</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +164,7 @@
     <MESSAGE value="Oct 08 - test to commit the icon image" />
     <MESSAGE value="Oct 08 - Added a Radio Button Group to toggle between most streamed and least streamed songs" />
     <MESSAGE value="Oct 09 - trying to add background image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oct 09 - trying to add background image" />
+    <MESSAGE value="Oct 09 - Fully Commented and Java Documented, may still add a few tests if time allows" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oct 09 - Fully Commented and Java Documented, may still add a few tests if time allows" />
   </component>
 </project>

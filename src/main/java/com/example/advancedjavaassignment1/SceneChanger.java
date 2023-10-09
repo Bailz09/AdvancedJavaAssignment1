@@ -12,7 +12,7 @@ import java.io.IOException;
 public class SceneChanger {
 
     /**
-     *A Method to change scences with an Action Event
+     *A Method to change scenes with an Action Event
      * passes the filename you wish to load
      */
     public static void changeScenes(ActionEvent event, String fxmlFileName) throws IOException {
