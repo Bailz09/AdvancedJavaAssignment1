@@ -1,0 +1,6 @@
+.root {
+    -fx-font-family: Rockwell;
+    -fx-background-image: url("images/Background.webp");
+    -fx-background-size: cover;
+
+}
