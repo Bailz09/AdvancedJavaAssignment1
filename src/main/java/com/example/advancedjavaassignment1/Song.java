@@ -4,10 +4,12 @@ import java.time.YearMonth;
 
 public class Song {
 
+    //instance variables
     private String songName, songArtist;
     private int yearReleased;
     private int streamCount;
 
+    //constructor
     public Song(String songName, String songArtist, int yearReleased, int streamCount) {
         setSongArtist(songArtist);
         setSongName(songName);
@@ -15,10 +17,14 @@ public class Song {
         setStreamCount(streamCount);
     }
 
+    //getters and setters(for validation)
     public String getSongName() {
         return songName;
     }
 
+    /**
+     *A method to validate(restrict) the length of the song name using the validString method
+     */
     public void setSongName(String songName) {
         if(validString(songName, 250))
         {
@@ -34,6 +40,9 @@ public class Song {
         return songArtist;
     }
 
+    /**
+     * A method to restrict the length of the song Artist
+     */
     public void setSongArtist(String songArtist) {
         if(validString(songArtist, 250))
         {
@@ -77,6 +86,9 @@ public class Song {
         return streamCount;
     }
 
+    /**
+     *a method to validate the stream count is not a negative number
+     */
     public void setStreamCount(int streamCount) {
         if(streamCount >= 0)
         {
@@ -88,6 +100,10 @@ public class Song {
         }
     }
 
+    /**
+     *A toString method to display each Song
+     * I figure this would always be a good method to include
+     */
     @Override
     public String toString() {
         return "List Of most Streamed Songs Spotify 2023: \n" +

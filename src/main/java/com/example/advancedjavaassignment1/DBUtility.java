@@ -18,17 +18,18 @@ public class DBUtility {
 
     /**
      * Get the songs from the database
+     * passes in the order of the sort and the number of values to return
      * @return An array list of songs
      */
-    public static ArrayList<Song> getSongsFromDB(String sortOrder){
+    public static ArrayList<Song> getSongsFromDB(String sortOrder, int limitValue){
         ArrayList<Song> songs = new ArrayList<>();
 
         //connect to the DB
         //Decided to try and add in a radio button for most and least streamed songs, wish me luck
         String sql = String.format("SELECT track_name, `artist(s)_name`, released_year, streams " +
                 "FROM `spotify-2023` " +
-                "ORDER BY streams %s " +
-                "LIMIT 50", sortOrder);
+                "ORDER BY streams %s " +//(sortOrder) for the radio button to swap
+                "LIMIT %d", sortOrder, limitValue);//(limitValue) so I can modify the method to display all the songs for the table view
 
 
 

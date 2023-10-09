@@ -10,6 +10,7 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -27,6 +28,10 @@ public class GraphViewController implements Initializable {
     @FXML
     private RadioButton mostStreamedButton;
 
+    /**
+     *An on action event for the radio buttons to switch the data from most streamed to least streamed
+     * in the data set
+     */
     @FXML
     void toggle(ActionEvent event) {
         if(mostStreamedButton.isSelected())
@@ -35,7 +40,7 @@ public class GraphViewController implements Initializable {
         }
         else if (leastStreamedButton.isSelected())
         {
-            populateBarChart("ASC");
+            populateBarChart("ASC");//for the least
         }
 
     }
@@ -51,19 +56,25 @@ public class GraphViewController implements Initializable {
         populateBarChart("DESC");
     }
 
+    /**
+     *A method that populates the Bar Chart
+     */
     void populateBarChart(String sortOrder){
         // Clear existing data from the chart
         barChart.getData().clear();
 
-        //retrieve data from database
-        List<Song> songs = DBUtility.getSongsFromDB(sortOrder);
+        //uses the getSongsFromDB method to get a limited number of songs from the DB
+        //stores them in a list
+        List<Song> songs = DBUtility.getSongsFromDB(sortOrder, 20);
 
+        //this came in helpful when I had issues fetching the data from the DB
+        //turns out some of my validation was too strict
         System.out.println("Number of songs fetched: " + songs.size());
 
         /**Got Below Code From CHATGPT to dynamically adjust my Y-axis range and tick units
          *
          */
-        // Step 2: Ascertain the minimum and maximum stream counts
+       /* // Step 2: Ascertain the minimum and maximum stream counts
         int minStreams = songs.stream().mapToInt(Song::getStreamCount).min().orElse(0);
         int maxStreams = songs.stream().mapToInt(Song::getStreamCount).max().orElse(0);
 
@@ -72,7 +83,43 @@ public class GraphViewController implements Initializable {
         yAxis.setAutoRanging(false);
         yAxis.setLowerBound(minStreams);
         yAxis.setUpperBound(maxStreams);
-        yAxis.setTickUnit((maxStreams - minStreams) / 10); // This will give 10 intervals
+        yAxis.setTickUnit((maxStreams - minStreams) / 10);
+*/
+
+        /**After finding out we are going to be learning about Streams later in the course
+         * I decided to try and find a simpler way of finding the min and max values in the
+         * Array
+         *Adapted From: https://www.geeksforgeeks.org/finding-the-minimum-or-maximum-value-in-java-arraylist/
+         */
+        //initializes the min and max to the stream count of the first song
+        int minStreams = songs.get(0).getStreamCount();
+        int maxStreams = songs.get(0).getStreamCount();
+
+        //a for loop that iterates through each song in the list
+        //since we set the min and max to the first element in the array list we can start at i=1
+        for(int i=1; i < songs.size();i++)
+        {
+            //set each iteration to a variable
+            int streamCount = songs.get(i).getStreamCount();
+
+            //compare the streamCount variable to minStreams and maxStreams to get the updated values
+            if(streamCount < minStreams)
+            {
+                minStreams = streamCount;
+            }
+
+            if(streamCount > maxStreams)
+            {
+                maxStreams = streamCount;
+            }
+        }
+
+        //set the yAxis variable to the NumberAxis from the barChart
+        NumberAxis yAxis = (NumberAxis) barChart.getYAxis();
+        yAxis.setAutoRanging(false);//turn off auto Range feature
+        yAxis.setLowerBound(minStreams);//set the lower bound of the axis to the minStreams variable
+        yAxis.setUpperBound(maxStreams);//set the upper bound to the maxStreams variable
+        yAxis.setTickUnit((maxStreams - minStreams) / 10); // This will give us 10 even intervals
 
         //create a data series Where the X-axis values are of type String and Y of type Number
         XYChart.Series<String, Number> songSeries = new XYChart.Series<>();
@@ -94,6 +141,7 @@ public class GraphViewController implements Initializable {
 
     /**
      * A Method to Truncate the Song Name as it was affecting how my Data was displaying on the chart
+     * took me a long time to figure this out
      */
     public String shortSongName(String songName, int maxLength){
         if(songName.length() > maxLength)
@@ -106,5 +154,8 @@ public class GraphViewController implements Initializable {
         }
     }
 
-
+    @FXML
+    void viewTable(ActionEvent event) throws IOException {
+        SceneChanger.changeScenes(event, "table-view.fxml");
+    }
 }

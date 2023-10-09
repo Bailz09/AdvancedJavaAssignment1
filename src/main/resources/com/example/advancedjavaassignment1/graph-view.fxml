@@ -10,33 +10,34 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="800.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.advancedjavaassignment1.GraphViewController">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.advancedjavaassignment1.GraphViewController">
    <children>
-      <VBox alignment="TOP_CENTER" layoutX="340.0" layoutY="139.0" prefHeight="800.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox alignment="TOP_CENTER" layoutX="139.0" prefHeight="800.0" prefWidth="1061.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="139.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label alignment="TOP_LEFT" text="Most Streamed Songs on Spotify 2023" />
-            <BarChart fx:id="barChart" title="Most Streamed Songs on Spotify 2023">
+            <Label alignment="TOP_LEFT" text="Most Streamed Songs on Spotify 2023" textFill="WHITE" />
+            <BarChart fx:id="barChart" alternativeRowFillVisible="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" maxWidth="-Infinity" prefHeight="460.0" prefWidth="915.0" title="Most Streamed Songs on Spotify 2023" verticalGridLinesVisible="false" verticalZeroLineVisible="false">
               <xAxis>
-                <CategoryAxis label="Songs" side="BOTTOM" tickLabelRotation="90.0" />
+                <CategoryAxis prefHeight="111.0" prefWidth="836.0" side="BOTTOM" tickLabelFill="WHITE" tickLabelRotation="90.0" />
               </xAxis>
               <yAxis>
-                <NumberAxis label="Number of Streams" minorTickVisible="false" prefHeight="360.0" prefWidth="49.0" side="LEFT" />
+                <NumberAxis minorTickVisible="false" prefHeight="278.0" prefWidth="91.0" side="LEFT" tickLabelFill="WHITE" />
               </yAxis>
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="50.0" />
                </VBox.margin>
             </BarChart>
-            <RadioButton fx:id="mostStreamedButton" mnemonicParsing="false" onAction="#toggle" text="Most Streamed">
+            <RadioButton fx:id="mostStreamedButton" mnemonicParsing="false" onAction="#toggle" text="Most Streamed" textFill="#fcf8f8">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>
             </RadioButton>
-            <RadioButton fx:id="leastStreamedButton" mnemonicParsing="false" onAction="#toggle" text="Least Streamed" />
-            <Button mnemonicParsing="false" text="View Table">
+            <RadioButton fx:id="leastStreamedButton" mnemonicParsing="false" onAction="#toggle" text="Least Streamed" textFill="WHITE" />
+            <Button fx:id="viewTableButton" mnemonicParsing="false" onAction="#viewTable" text="View Table">
                <VBox.margin>
                   <Insets top="70.0" />
                </VBox.margin></Button>
          </children>
       </VBox>
+      <Label layoutX="22.0" layoutY="140.0" text="Number Of Streams" textFill="#fffefe" />
    </children>
 </AnchorPane>
