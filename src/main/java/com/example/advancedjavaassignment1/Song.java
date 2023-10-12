@@ -58,7 +58,8 @@ public class Song {
     public boolean validString(String testString, int maxLength)
     {
         testString = testString.trim();
-        return(testString.length() >= 1 && testString.length() <= maxLength);
+        //originally had (testString.length >= 1) but my test cases didn't like that so went with .isEmpty with success
+        return(!testString.isEmpty() && testString.length() <= maxLength);
     }
     public int getYearReleased() {
         return yearReleased;
